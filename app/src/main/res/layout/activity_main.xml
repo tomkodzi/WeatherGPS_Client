@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/tlo3">
+
+
+    <Button
+        android:id="@+id/gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Synchronizuj"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/common_google_signin_btn_text_light_default"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Switch"
+        android:textSize="@dimen/activity_horizontal_margin"
+        android:textColor="@android:color/white">
+
+    </Button>
+
+    <Button
+        android:text="Statystyki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stats"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/gps"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:elevation="0dp"
+        android:backgroundTint="@color/common_google_signin_btn_text_light_default"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Switch"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title" />
+
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/common_google_signin_btn_text_light_default"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_weight="0.06"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+            android:textColor="@color/colorAccent" />
+    </ScrollView>
+
+    <RadioGroup
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/common_google_signin_btn_text_dark_disabled">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPS"
+            android:id="@+id/gpsButton" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NETWORK"
+            android:id="@+id/networkButton"
+            android:enabled="true"
+            android:checked="true" />
+    </RadioGroup>
+
+</LinearLayout>
